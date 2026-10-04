@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f8f8f5;
+  --surface: #ffffff;
+  --text: #111111;
+  --muted: #6b6b6b;
+  --faint: #8a8a8a;
+  --line: rgba(0, 0, 0, 0.12);
+  --line-strong: rgba(0, 0, 0, 0.2);
+  --leaf: #2d5a3c;
+  --leaf-soft: #eef4ef;
+  
+  --pad-x: clamp(1.25rem, 6vw, 6.5rem);
+  --pad-y: clamp(4.5rem, 10vw, 8.5rem);
+  --nav-h: 72px;
+}
+
+@theme {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-leaf: var(--leaf);
+  --color-leaf-soft: var(--leaf-soft);
+
+  --font-sans: var(--font-dm-sans), system-ui, -apple-system, sans-serif;
+  --font-serif: var(--font-playfair), Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-h);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Film grain / subtle paper texture overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9990;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+}
+
+/* Accessibility skip link */
+.skip-link {
+  position: fixed;
+  left: 1.25rem;
+  top: -4rem;
+  z-index: 10001;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--text);
+  color: var(--bg);
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: top 0.25s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skip-link:focus {
+  top: 1.25rem;
+  outline: 2px solid var(--leaf);
+  outline-offset: 2px;
+}
+
+/* High contrast visible focus state */
+:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Font serif italic helper */
+.font-editorial {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+}
