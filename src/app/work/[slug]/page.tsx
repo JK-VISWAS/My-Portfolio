@@ -189,14 +189,14 @@ export default async function ProjectPage({ params }: PageProps) {
 
           {/* Next Project Footer Bar */}
           {nextProject && (
-            <div className="pt-12 border-t border-black/[0.1] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+            <div className="pt-12 border-t border-black/[0.1] dark:border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
               <div>
-                <span className="text-xs uppercase tracking-[0.18em] text-[#8a8a8a] block mb-1 font-mono">
+                <span className="text-xs uppercase tracking-[0.18em] text-[#8a8a8a] dark:text-neutral-400 block mb-1 font-mono">
                   Next Project
                 </span>
                 <Link
                   href={`/work/${nextProject.slug}`}
-                  className="text-2xl sm:text-3xl font-semibold text-[#111111] hover:text-[#2d5a3c] transition-colors"
+                  className="text-2xl sm:text-3xl font-semibold text-[#111111] dark:text-white hover:text-[#2d5a3c] dark:hover:text-emerald-400 transition-colors"
                 >
                   {nextProject.title} →
                 </Link>
@@ -204,7 +204,7 @@ export default async function ProjectPage({ params }: PageProps) {
 
               <Link
                 href="/#work"
-                className="px-6 py-3 rounded-full border border-black/20 text-[#111111] text-xs font-semibold uppercase tracking-[0.14em] hover:bg-black hover:text-white transition-colors"
+                className="px-6 py-3 rounded-full border border-black/20 dark:border-white/20 text-[#111111] dark:text-white text-xs font-semibold uppercase tracking-[0.14em] hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-[#111111] transition-colors"
               >
                 All Projects
               </Link>

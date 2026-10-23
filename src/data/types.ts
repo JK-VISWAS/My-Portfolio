@@ -16,6 +16,7 @@ export interface Project {
   description: string;
   number?: string;
   featured?: boolean;
+  video?: string;
 }
 
 export interface Skill {

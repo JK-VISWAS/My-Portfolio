@@ -18,6 +18,7 @@ export const projects: Project[] = [
       live: 'https://theviswasarchives.com/work/software-ai',
     },
     cover: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1400&q=85',
+    video: 'https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-code-screen-close-up-41484-large.mp4',
     description:
       'An exploratory initiative designing neural workflows and autonomous agents that augment digital task execution. Built with clean modular microservices, resilient data processing pipelines, and responsive real-time interfaces.',
     featured: true,
@@ -36,6 +37,7 @@ export const projects: Project[] = [
       repo: 'https://github.com/JK-VISWAS',
     },
     cover: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=85',
+    video: 'https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-screens-with-graphs-and-data-31912-large.mp4',
     description:
       'Robust analytics framework engineered for predictive modeling, statistical exploration, and interactive business intelligence dashboards. Features scalable ETL transformations, anomaly detection, and automated data validation.',
     featured: true,
@@ -55,6 +57,7 @@ export const projects: Project[] = [
       live: 'https://theviswasarchives.com',
     },
     cover: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1400&q=85',
+    video: 'https://assets.mixkit.co/videos/preview/mixkit-hands-typing-on-a-laptop-keyboard-41486-large.mp4',
     description:
       'A study in ultra-modern digital craftsmanship. Demonstrates fluid layout transitions, strict typographic rhythm, accessible navigation systems, and sub-second rendering across all modern mobile and desktop viewports.',
     featured: true,
@@ -77,6 +80,7 @@ export const projects: Project[] = [
       live: 'https://ecotrack.theviswasarchives.com',
     },
     cover: 'https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1400&q=85',
+    video: 'https://assets.mixkit.co/videos/preview/mixkit-wind-turbines-in-a-green-field-42408-large.mp4',
     description:
       'EcoTrack empowers users to track, analyze, and offset everyday emissions through automated metric calculations, smart notifications, and interactive environmental impact visualizations. Built with an event-driven architecture and accessible interface.',
     featured: false,
@@ -95,6 +99,7 @@ export const projects: Project[] = [
       repo: 'https://github.com/JK-VISWAS/urbanpulse',
     },
     cover: 'https://images.unsplash.com/photo-1477959858617-67f30bc75b82?auto=format&fit=crop&w=1400&q=85',
+    video: 'https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-city-traffic-at-night-41551-large.mp4',
     description:
       'UrbanPulse processes spatial telemetry and transit feeds to generate predictive traffic congestion models and public resource allocation recommendations for modern municipalities.',
     featured: false,
@@ -113,6 +118,7 @@ export const projects: Project[] = [
       repo: 'https://github.com/JK-VISWAS/loan-prediction-classification',
     },
     cover: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1400&q=85',
+    video: 'https://assets.mixkit.co/videos/preview/mixkit-financial-graphs-and-charts-on-a-digital-tablet-41618-large.mp4',
     description:
       'A predictive creditworthiness system utilizing supervised ensemble classification algorithms (Random Forest, XGBoost, Logistic Regression) with automated hyperparameter tuning and bias evaluation.',
     featured: false,

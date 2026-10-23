@@ -32,7 +32,6 @@ export const siteConfig: SiteConfig = {
     { label: 'Skills', href: '#skills' },
     { label: 'Experience', href: '#experience' },
     { label: 'Work', href: '#work' },
-    { label: 'Contact', href: '#contact' },
   ],
   metadata: {
     title: 'Joy Viswas Kolli — Developer & AI Enthusiast',
